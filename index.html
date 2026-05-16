@@ -6,14 +6,14 @@
   <title>beoneai.com | Domain For Sale</title>
   <meta
     name="description"
-    content="beoneai.com is for sale for $345 USD. Secure this premium domain today or contact us directly."
+    content="beoneai.com is for sale for $1,145 USD. Secure this premium domain today or contact us directly."
   >
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
   <meta property="og:title" content="beoneai.com | Domain For Sale">
   <meta
     property="og:description"
-    content="This domain is for sale for $345 USD. Buy now or contact us directly."
+    content="This domain is for sale for $1,145 USD. Buy now or contact us directly."
   >
   <meta property="og:url" content="https://beoneai.com/">
   <meta property="og:site_name" content="beoneai.com">
@@ -21,7 +21,7 @@
   <meta name="twitter:title" content="beoneai.com | Domain For Sale">
   <meta
     name="twitter:description"
-    content="This domain is for sale for $345 USD. Buy now or contact us directly."
+    content="This domain is for sale for $1,145 USD. Buy now or contact us directly."
   >
   <link rel="canonical" href="https://beoneai.com/">
   <style>
@@ -119,13 +119,76 @@
       margin-left: 8px;
     }
 
-    .cta {
+    .cta-group {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .cta-card {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      padding: 22px;
+      border: 1px solid rgba(16, 20, 24, 0.1);
+      border-radius: 26px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 250, 252, 0.98) 100%);
+      box-shadow: 0 20px 44px rgba(16, 20, 24, 0.08);
+      text-align: left;
+    }
+
+    .cta-brand {
+      min-height: 150px;
+      padding: 24px;
+      border: 1px solid rgba(16, 20, 24, 0.08);
+      border-radius: 22px;
+      background:
+        radial-gradient(circle at top, rgba(16, 20, 24, 0.05), transparent 58%),
+        linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cta-logo {
+      display: block;
+      width: 100%;
+      max-width: 210px;
+      max-height: 58px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .cta-logo--godaddy {
+      max-width: 380px;
+      max-height: 88px;
+    }
+
+    .cta-label {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.4;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .cta-meta {
+      margin: -10px 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .cta-button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-width: 220px;
-      margin-top: 40px;
-      padding: 18px 30px;
+      width: 100%;
+      min-height: 56px;
+      padding: 16px 24px;
       border-radius: 999px;
       background: var(--button);
       color: var(--button-text);
@@ -137,16 +200,23 @@
       transition: background-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
     }
 
-    .cta:hover,
-    .cta:focus-visible {
+    .cta-button:hover,
+    .cta-button:focus-visible {
       background: var(--button-hover);
       transform: translateY(-1px);
       box-shadow: 0 22px 42px rgba(16, 20, 24, 0.2);
     }
 
-    .cta:focus-visible {
+    .cta-button:focus-visible {
       outline: 3px solid rgba(16, 20, 24, 0.16);
       outline-offset: 4px;
+    }
+
+    .cta-note {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
     }
 
     .contact {
@@ -192,8 +262,8 @@
         max-width: 24ch;
       }
 
-      .cta {
-        width: 100%;
+      .cta-group {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -202,12 +272,32 @@
   <main class="shell">
     <section class="panel" aria-labelledby="domain-title">
       <p class="eyebrow">Premium Domain Opportunity</p>
-      <h1 id="domain-title">beoneai.com</h1>
+      <h1 id="domain-title">BeOneAI.com</h1>
       <p class="message">This domain is for sale</p>
-      <p class="price">$1145<span>USD</span></p>
-      <a class="cta" href="https://checkoutlink.godaddy.com/82a4353b-e0a0-4a45-a5d7-49073793d281" target="_blank" rel="noopener noreferrer">
-        Buy Now
-      </a>
+      <p class="price">$1,145<span>USD</span></p>
+      <div class="cta-group" role="group" aria-label="Purchase options">
+        <article class="cta-card" aria-label="GoDaddy purchase option">
+          <div class="cta-brand">
+            <img class="cta-logo cta-logo--godaddy" src="./GoDaddy_logo.svg" alt="GoDaddy">
+          </div>
+          <p class="cta-label">GoDaddy Marketplace</p>
+          <p class="cta-meta">Secure checkout and direct purchase flow.</p>
+          <a class="cta-button" href="https://checkoutlink.godaddy.com/82a4353b-e0a0-4a45-a5d7-49073793d281" target="_blank" rel="noopener noreferrer" aria-label="Buy beoneai.com on GoDaddy">
+            Buy Now
+          </a>
+        </article>
+        <article class="cta-card" aria-label="Namecheap purchase option">
+          <div class="cta-brand">
+            <img class="cta-logo" src="./Namecheap_Logo.svg" alt="Namecheap">
+          </div>
+          <p class="cta-label">Namecheap Marketplace</p>
+          <p class="cta-meta">Secure checkout and direct purchase flow.</p>
+          <a class="cta-button" href="https://www.namecheap.com/domains/registration/results/?domain=beoneai.com" aria-label="Request to buy beoneai.com via Namecheap">
+            Buy Now
+          </a>
+        </article>
+      </div>
+      <p class="cta-note">For a secure and professional domain purchase and transfer, choose your preferred registrar checkout flow.</p>
 
       <div class="contact">
         <p>Prefer to contact us directly?</p>
